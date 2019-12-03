@@ -29,7 +29,7 @@ def parse_dat(file):
                 # if the attribute already exist, append
                 # if not, create
                 if line[0] in dat_dict[i].keys():
-                    dat_dict[i][attr]=dat_dict[i][attr]+line[1]
+                    dat_dict[i][attr]=dat_dict[i][attr]+ " -- " + line[1]
                 else:
                     dat_dict[i][attr]=line[1]
 
@@ -38,10 +38,11 @@ def parse_dat(file):
                 dat_dict[i]={}
 
             elif line[0]=="/":
-                dat_dict[i][attr]=dat_dict[i][attr]+line
+                dat_dict[i][attr]=dat_dict[i][attr]+ " -- " + line
     #print(dat_dict)
     dat_df = pd.DataFrame(dat_dict).transpose()
-    dat_df.replace(to_replace=r'\n$',value= '', regex = True, inplace=True)
+    dat_df.replace(to_replace=r'\n/\n/',value= ' -- ', regex = True, inplace=True)
+    dat_df.replace(to_replace=r'\n',value= '', regex = True, inplace=True)
     return dat_df
 
 def parse_col(file):
