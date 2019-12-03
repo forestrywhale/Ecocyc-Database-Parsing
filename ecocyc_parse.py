@@ -46,5 +46,5 @@ def parse_dat(file):
     return dat_df
 
 def parse_col(file):
-    dat_df = pd.read_csv(gene_col_file, index_col=0, sep="\t", comment="#")
+    dat_df = pd.read_csv(file, index_col=0, sep="\t", comment="#")
     return dat_df
