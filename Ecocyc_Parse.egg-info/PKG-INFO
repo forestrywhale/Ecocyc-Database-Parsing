@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: Ecocyc-Parse
+Version: 0.0.1
+Summary: UNKNOWN
+Home-page: https://github.com/kikyo91/Ecocyc-Database-Parsing
+Author: kikyo91
+Author-email: huijingwang91@gmail.com
+License: UNKNOWN
+Description: # Ecocyc-Database-Parsing
+        Helpful functions for parsing EcoCyc Database file.
+        
+        EcoCyc is a heavy curated scientific database for the bacterium Escherichia coli K-12 MG1655. The EcoCyc project performs literature-based curation of its genome, and of transcriptional regulation, transporters, and metabolic pathways.
+        
+        Database link: https://ecocyc.org/
+        
+        This repository is aiming at facilitating database analysis with Python. Mainly, the function read database files into a pandas.DataFrame. The database file formats can be found here: http://brg.ai.sri.com/ptools/flatfile-format.html
+        
+        To import the package.
+            import Ecocyc_Parse as ep
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown

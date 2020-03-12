@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.py
+Ecocyc_Parse/__init__.py
+Ecocyc_Parse/ecocyc_parse.py
+Ecocyc_Parse.egg-info/PKG-INFO
+Ecocyc_Parse.egg-info/SOURCES.txt
+Ecocyc_Parse.egg-info/dependency_links.txt
+Ecocyc_Parse.egg-info/top_level.txt
+ecocyc_parse/__init__.py
+ecocyc_parse/ecocyc_parse.py
