@@ -7,5 +7,10 @@ Database link: https://ecocyc.org/
 
 This repository is aiming at facilitating database analysis with Python. Mainly, the function read database files into a pandas.DataFrame. The database file formats can be found here: http://brg.ai.sri.com/ptools/flatfile-format.html
 
-To import the package.
+To install the package:
+
+    pip install Ecocyc-Parse
+
+To import the package:
+
     import Ecocyc_Parse as ep
